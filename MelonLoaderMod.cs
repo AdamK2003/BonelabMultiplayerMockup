@@ -63,11 +63,13 @@ namespace BonelabMultiplayerMockup
         
         public static MelonPreferences_Category BLMPCategory;
         public static MelonPreferences_Entry<bool> playerMotionSmoothing;
+        public static MelonPreferences_Entry<uint> appId;
 
         public override void OnInitializeMelon()
         {
             BLMPCategory = MelonPreferences.CreateCategory("BLMP");
             playerMotionSmoothing = BLMPCategory.CreateEntry<bool>("playerMotionSmoothing", false);
+            appId = BLMPCategory.CreateEntry<uint>("appId", 1592190u);
             CreateMenu();
         }
         

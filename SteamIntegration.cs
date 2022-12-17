@@ -21,7 +21,7 @@ namespace BonelabMultiplayerMockup
     public class SteamIntegration
     {
         public static SteamIntegration Instance;
-        public static uint gameAppId = 480;
+        public static uint gameAppId = BonelabMultiplayerMockup.appId.Value;
 
         public string currentName { get; set; }
         public static SteamId currentId { get; set; }
